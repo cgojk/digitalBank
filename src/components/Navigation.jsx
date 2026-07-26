@@ -1,5 +1,6 @@
 
-import logo from "../assets/images/logo.svg";
+import logo from "../images/logo-light.svg";
+import logodark from "../images/logo-dark.svg";
 
 
 import { useEffect,useState } from "react";
@@ -63,6 +64,19 @@ useEffect(() => {
             <li className="nav__items">
               <NavLink to="/recipes" className="nav__items__links">
               Contact
+              </NavLink>
+            </li>
+
+            <li className="nav__items">
+              <NavLink to="/recipes" className="nav__items__links">
+             Blog
+              </NavLink>
+            </li>
+
+            
+            <li className="nav__items">
+              <NavLink to="/recipes" className="nav__items__links">
+          careers
               </NavLink>
             </li>
 
