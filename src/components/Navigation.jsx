@@ -14,17 +14,6 @@ export default function Navigation() {
 
 const [menuOpen, setMenuOpen] = useState(false);
 
-// useEffect(() => {
-//   if (menuOpen) {
-//     document.body.style.overflow = "hidden";
-//   } else {
-//     document.body.style.overflow = "";
-//   }
-
-//   return () => {
-//     document.body.style.overflow = "";
-//   };
-// }, [menuOpen]);
 
  function handleOverlayClick() {
     setMenuOpen(false);
@@ -40,7 +29,8 @@ onClick={handleOverlayClick}>
       <div className="header__inner">
 
         <Link to="/home" className="nav-logo-link">
-          <img src={logo} className="nav-logo" alt="Bank logo" />
+          <img src={logodark} className="nav-logo" alt="Bank logo" />
+         
         </Link>
 
         <nav
@@ -82,7 +72,11 @@ onClick={handleOverlayClick}>
             </li>
 
           </ul>
-
+      <Link to="/home" className="nav__button-link">
+            <button className="btn btn--primary">
+            Request Invite
+            </button>
+          </Link>
        
         </nav>
 
@@ -95,6 +89,7 @@ onClick={handleOverlayClick}>
         </button>
 
       </div>
+      
     </header>
     </>
 

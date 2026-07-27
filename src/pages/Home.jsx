@@ -1,10 +1,12 @@
 import React from "react";
+import Hero from "../components/Hero";
 
 
  export default function Home() {
   return (
    <section className="home container">
-     <h1 className="home-title">Welcome to Digital Bank</h1>
+    <Hero />
+    
        
     </section>
    );
