@@ -139,3 +139,13 @@ body,
 #root {
   min-height: 100vh;
 }
+
+::-webkit-scrollbar{
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--clr-gray-300);
+    border-radius: 4px;
+}

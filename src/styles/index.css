@@ -137,6 +137,15 @@ body,
   min-height: 100vh;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--clr-gray-300);
+  border-radius: 4px;
+}
+
 /*======================================
             GLOBAL VARIABLES
 ======================================*/
@@ -278,6 +287,38 @@ body,
   --spacing-900: 4.5rem; /* 72px */
   --spacing-1000: 5rem; /* 80px */
   --spacing-1500: 7.5rem; /* 120px */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  line-height: var(--lh-400);
+  color: var(--clr-gray-900);
+  background-color: var(--clr-gray-600);
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto; /* Allow interaction when active */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--background-image-gradient-2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 998; /* Ensure it is below the header */
 }
 
 .nav-logo {

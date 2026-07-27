@@ -1,8 +1,45 @@
 //=========================== NAVIGATION STYLES============================
 // =======================================================================+
+.container {
+//   width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  line-height: var(--lh-400);
+  color: var(--clr-gray-900);
+  background-color: var(--clr-gray-600);
+
+}
+
+// =========================== NAVIGATION STYLES============================
 
 
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; /* Allow interaction when active */
+  
+  
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: hsl(0 0% 0% / 0.75);
+    background-image:var(--background-image-gradient-2);
 
+   
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    // pointer-events: none; /* Prevent interaction when not active */
+    z-index: 998; /* Ensure it is below the header */
+}
 .nav-logo{
  
   height: auto;

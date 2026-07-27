@@ -12,29 +12,30 @@ import React from "react";
 
 export default function Navigation() {
 
-  const [menuOpen, setMenuOpen] = useState(false);
+const [menuOpen, setMenuOpen] = useState(false);
 
+// useEffect(() => {
+//   if (menuOpen) {
+//     document.body.style.overflow = "hidden";
+//   } else {
+//     document.body.style.overflow = "";
+//   }
 
-  // close menu when route changes
+//   return () => {
+//     document.body.style.overflow = "";
+//   };
+// }, [menuOpen]);
 
-
-  // lock body scroll when menu is open
-
-
-useEffect(() => {
-  if (menuOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "";
+ function handleOverlayClick() {
+    setMenuOpen(false);
   }
 
-  return () => {
-    document.body.style.overflow = "";
-  };
-}, [menuOpen]);
-
   return (
+<>
+<div className={` overlay ${menuOpen ? "active" : ""}`} 
+onClick={handleOverlayClick}>
 
+</div>
     <header className="header container">
       <div className="header__inner">
 
@@ -95,6 +96,7 @@ useEffect(() => {
 
       </div>
     </header>
+    </>
 
   );
 }
