@@ -508,6 +508,7 @@ body {
 
 .features {
   background-color: var(--clr-gray-100);
+  margin-bottom: var(--spacing-800);
 }
 .features .features__title {
   font: var(--font-3);

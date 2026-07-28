@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
+import Articles from "../components/Articles";
 
 
  export default function Home() {
@@ -8,6 +9,7 @@ import Features from "../components/Features";
    <section className="home container">
     <Hero />
     <Features />
+    <Articles />
     
        
     </section>
