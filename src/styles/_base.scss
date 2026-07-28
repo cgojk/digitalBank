@@ -204,22 +204,7 @@ display:inline-block;
 
 }
 
-// .btn{
-    
-//     padding:var(--spacing-100) var(--spacing-200);
-//     border-radius:var(--);
-//     border-radius:var(--radius-24);
-//     border:none;
-//     cursor:pointer;
-//     font: var(--font-7);
-//     transition: background-color 0.3s ease, color 0.3s ease;
-//     background-image:var(--background-image-gradient-1);
-//     color:var(--clr-white);
-//     &:hover{
-//         background-image:var(--background-image-gradient-2);
-//         color:var(--clr-white);
-//     }
-// }
+
 
 
 .btn {
@@ -259,5 +244,50 @@ display:inline-block;
 }
 
 
- 
+//  =========================styles for features section=======================================
+// features section
+// ===================================================================
 
+
+.features{
+    background-color:var(--clr-gray-100);
+
+    .features__title{
+        font: var(--font-3);
+        text-align:center;
+        color:var(--clr-blue-950);
+        margin-top:var(--spacing-800);
+
+    } 
+    .features__text{
+        font: var(--font-8);
+        text-align:center;
+        color:var(--clr-gray-600);
+        margin-top:var(--spacing-200);
+        margin-bottom:var(--spacing-400);
+    } 
+    
+    .features__item{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:var(--spacing-200);
+        padding:var(--spacing-400);
+        
+
+        .features__item__icon{
+            width: 80px;
+            height: 80px;
+            margin-bottom:var(--spacing-200);
+        }
+        .features__item__title{
+            font: var(--font-4);
+            color:var(--clr-blue-950);
+        }
+        .features__item__text{
+            font: var(--font-8);
+            color:var(--clr-gray-600);
+        }
+    }
+}

@@ -504,4 +504,42 @@ body {
 .btn:hover::before,
 .btn:focus-visible::before {
   transform: scaleX(1);
+}
+
+.features {
+  background-color: var(--clr-gray-100);
+}
+.features .features__title {
+  font: var(--font-3);
+  text-align: center;
+  color: var(--clr-blue-950);
+  margin-top: var(--spacing-800);
+}
+.features .features__text {
+  font: var(--font-8);
+  text-align: center;
+  color: var(--clr-gray-600);
+  margin-top: var(--spacing-200);
+  margin-bottom: var(--spacing-400);
+}
+.features .features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-200);
+  padding: var(--spacing-400);
+}
+.features .features__item .features__item__icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: var(--spacing-200);
+}
+.features .features__item .features__item__title {
+  font: var(--font-4);
+  color: var(--clr-blue-950);
+}
+.features .features__item .features__item__text {
+  font: var(--font-8);
+  color: var(--clr-gray-600);
 }/*# sourceMappingURL=index.css.map */

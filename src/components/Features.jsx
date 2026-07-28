@@ -15,9 +15,9 @@ import datafeatures from "../datafeatures";
        <div className="features__info">
             {datafeatures.map((feature) => (
               <div key={feature.id} className="features__item">
-                <img src={feature.icon} alt={feature.alt} />
-                <h2 className="features__item-title">{feature.title}</h2>
-                <p className="features__item-text">{feature.description}</p>
+                <img className="features__item__icon" src={feature.icon} alt={feature.alt} />
+                <h2 className="features__item__title">{feature.title}</h2>
+                <p className="features__item__text">{feature.description}</p>
               </div>
             ))}
        </div>
