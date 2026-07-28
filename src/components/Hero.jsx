@@ -10,15 +10,15 @@ import phones from "../images/image-mockups.png";
   return (
    <section className="hero container">
   
-        <div className="image__hero">
+        <div className="image__hero--container">
             <picture className="image__hero">
                 <source
-                    media="(min-width: 1024px)"
+                    media="(min-width:1100px)"
                     srcSet={heroimagedesktop}
                 />
                 <img
                  src={heroimage}
-                 alt="Illustration of people reading books"
+                 alt="Illustration a backgorudn patterne blue and green"
                  />
             </picture>
                <img src={phones} alt="Illustration of phones" 

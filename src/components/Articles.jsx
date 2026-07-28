@@ -11,17 +11,21 @@ import articlesInfo from "../articlesinfo";
    <section className="articles container">
   
        <h1 className="articles__title">Latest Articles</h1> 
-      
+       <ul className="wrapper__image--description">
             {articlesInfo.map((article) => (
-              <div key={article.id} className="articles__item">
-                <img className="articles__item__image" src={article.image} alt={article.alt} />
+              <li key={article.id} className="articles__item">
+                <div className="container__image">
+                 <img className="articles__item__image" src={article.image} alt={article.alt} />
+                </div>
                 <div className="articles__item__content">
                   <p className="articles__item__author">{article.author}</p>
                   <h2 className="articles__item__title">{article.title}</h2>
                   <p className="articles__item__description">{article.description}</p>
                 </div>
-              </div>
+              </li>
+             
             ))}
+            </ul>
        
     </section>
    );

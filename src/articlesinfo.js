@@ -10,7 +10,7 @@ export default [
         image: articlemoney,
         alt: "Illustration of currency",
         author: "By Claire Robinson",
-        title: "REcieve money in any currency with no fees",
+        title: "Receive money in any currency with no fees",
         description:
             "The world is getting smaller and we're becoming more mobiel.  So why should you be forced to only receive money in a single..."
        
