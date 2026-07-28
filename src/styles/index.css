@@ -146,6 +146,11 @@ body,
   border-radius: 4px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*======================================
             GLOBAL VARIABLES
 ======================================*/
@@ -473,16 +478,30 @@ body {
 
 .btn {
   padding: var(--spacing-100) var(--spacing-200);
-  border-radius: var(--);
   border-radius: var(--radius-24);
   border: none;
   cursor: pointer;
   font: var(--font-7);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--clr-white);
   background-image: var(--background-image-gradient-1);
-  color: var(--clr-white);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: color 0.3s ease;
 }
-.btn:hover {
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: var(--background-image-gradient-2);
-  color: var(--clr-white);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms ease-in-out;
+  z-index: -1;
+}
+
+.btn:hover::before,
+.btn:focus-visible::before {
+  transform: scaleX(1);
 }/*# sourceMappingURL=index.css.map */

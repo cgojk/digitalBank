@@ -30,7 +30,8 @@ import phones from "../images/image-mockups.png";
             <h1 className="hero__title">Next Generation digital banking</h1>
             <p className="hero__text">Take your financial life online.  Your Digitalbank
                 account will be a one -stop-shop for spending, saving, budgeting, investing, and much more.</p>
-            <button className="btn btn--primary">Request Invite</button>
+            {/* <button className="btn btn--primary">Request Invite</button> */}
+             <Link to="/request-invite" className="btn btn-primary"> Request Invite </Link>
          </div>
        
     </section>
