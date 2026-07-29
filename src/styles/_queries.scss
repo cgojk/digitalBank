@@ -1,11 +1,28 @@
 
 
 @media only screen and (min-width: 468px) {
+
+
 .image__hero--container{
   .image__overlay--background{
        
         height:60vh;
         
+}
+        
     }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    
+.image__hero{
+ 
+  transform: translateX(250px);
 }
 }

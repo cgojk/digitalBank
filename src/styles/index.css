@@ -308,6 +308,11 @@ a {
     height: 60vh;
   }
 }
+@media only screen and (min-width: 768px) {
+  .image__hero {
+    transform: translateX(250px);
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -478,7 +483,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: var(--spacing-200);
-  margin-top: clamp(2.5rem, 8vw, 6rem);
 }
 .hero .hero__title {
   font: var(--font-2);
@@ -620,4 +624,14 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+
+.footer {
+  background-color: var(--clr-blue-950);
+  color: var(--clr-white);
+}
+
+.socialmedia__icons {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=index.css.map */
