@@ -9,11 +9,12 @@ import phones from "../images/image-mockups.png";
  export default function Hero() {
   return (
    <section className="hero container">
+    
   
         <div className="image__hero--container">
             <picture className="image__hero">
                 <source
-                    media="(min-width:1100px)"
+                    media="(min-width:468px)"
                     srcSet={heroimagedesktop}
                 />
                 <img
