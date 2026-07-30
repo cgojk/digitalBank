@@ -309,6 +309,12 @@ a {
   .image__hero {
     transform: translateX(250px);
   }
+  .features__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-200);
+    margin-top: var(--spacing-400);
+  }
 }
 .container {
   max-width: 1200px;
