@@ -11,7 +11,7 @@ import instagram from "../images/icon-instagram.svg";
 export default function Footer() {
   return (
 <>
-    <Footer className="footer container">
+    <section className="footer container">
         <div className="wrapper__socialmedia__logo">
             <img src={logolight} className="nav-logo" alt="Bank logo" />
         </div>
@@ -81,7 +81,7 @@ export default function Footer() {
             </button>
           </Link>
       </div>
-    </Footer>
+    </section>
     </>
 
   );
