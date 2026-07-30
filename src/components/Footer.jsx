@@ -90,7 +90,7 @@ export default function Footer() {
             </button>
           </Link>
          
-            <p>&copy; 2023 Bank. All rights reserved.</p>
+            <p className="copyright">&copy; 2023 Bank. All rights reserved.</p>
          
      
       </div>
