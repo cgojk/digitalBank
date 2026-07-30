@@ -68,18 +68,31 @@ export default function Footer() {
               </NavLink>
             </li>
 
+            <li className="footer__items">
+              <NavLink to="/recipes" className="footer__items__links">
+         Support
+              </NavLink>
+            </li>
+            <li className="footer__items">
+              <NavLink to="/recipes" className="footer__items__links">
+          Privacy Policy
+              </NavLink>
+            </li>
+
      
         </ul>
 
       </div>
-          <div className="wrapper__linkbutton--copyright">
-            <p>&copy; 2023 Bank. All rights reserved.</p>
-         
-      <Link to="/home" className="footer__button-link">
+      <div className="wrapper__button--copyright">
+       <Link to="/home" className="footer__button-link">
             <button className="btn btn--primary">
             Request Invite
             </button>
           </Link>
+         
+            <p>&copy; 2023 Bank. All rights reserved.</p>
+         
+     
       </div>
     </section>
     </>
