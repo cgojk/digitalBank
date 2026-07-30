@@ -220,19 +220,16 @@ display:inline-block;
 
 
 .btn {
-  padding: var(--spacing-100) var(--spacing-200);
+  padding: var(--spacing-150) var(--spacing-400);
   border-radius: var(--radius-24);
   border: none;
   cursor: pointer;
   font: var(--font-8);
   color: var(--clr-white);
-
   background-image: var(--background-image-gradient-1);
-
   position: relative;
   overflow: hidden;
   z-index: 0;
-
   transition: color 0.3s ease;
 }
 
@@ -430,10 +427,10 @@ display:inline-block;
     display:flex;
     flex-direction:column;
     align-items:center;
-    gap:var(--spacing-200);
+    gap:var(--spacing-250);
 
     .copyright{
         font: var(--font-9);
-        color:var(--clr-gray-100);
+        color:var(--clr-gray-600);
     }
 }
