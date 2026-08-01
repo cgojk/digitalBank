@@ -16,19 +16,19 @@ export default function Footer() {
             <img src={logolight} className="nav-logo" alt="Bank logo" />
         </div>
         <div className="socialmedia__icons">
-                <div className="facebook">
+                <div className="icon__item facebook">
                     <img src={facebook} alt="Facebook" />
                 </div>
-                <div className="youtube">
+                <div className="icon__item youtube">
                     <img src={youtube} alt="YouTube" />
                 </div>
-                <div className="twitter">
+                <div className="icon__item twitter">
                     <img src={twitter} alt="Twitter" />
                 </div>
-                <div className="pinterest">
+                <div className="icon__item pinterest">
                     <img src={pinterest} alt="Pinterest" />
                 </div>
-                <div className="instagram">
+                <div className="icon__item instagram">
                     <img src={instagram} alt="Instagram" />
                </div>
 

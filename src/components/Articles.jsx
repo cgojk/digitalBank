@@ -8,7 +8,7 @@ import articlesInfo from "../articlesinfo";
 
  export default function Articles() {
   return (
-   <section className="articles container">
+   <section className="articles__container container">
   
        <h1 className="articles__title">Latest Articles</h1> 
        <ul className="wrapper__image--description">
