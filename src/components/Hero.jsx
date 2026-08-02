@@ -8,9 +8,8 @@ import phones from "../images/image-mockups.png";
 
  export default function Hero() {
   return (
-   <section className="hero container">
-    
-  
+   <section className="hero">
+    <div className="wrapper__image--content ">
         <div className="image__hero--container">
             <picture className="image__hero">
                 <source
@@ -27,14 +26,14 @@ import phones from "../images/image-mockups.png";
                  loading="lazy"/>
 
          </div>
-         <div className="wrapper__title--text-button">
+         <div className="wrapper__title--text-button container">
             <h1 className="hero__title">Next Generation digital banking</h1>
             <p className="hero__text">Take your financial life online.  Your Digitalbank
                 account will be a one -stop-shop for spending, saving, budgeting, investing, and much more.</p>
             {/* <button className="btn btn--primary">Request Invite</button> */}
              <Link to="/request-invite" className="btn btn-primary"> Request Invite </Link>
          </div>
-       
+       </div>
     </section>
    );
  }

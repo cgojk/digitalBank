@@ -1,5 +1,4 @@
 
-import logo from "../images/logo-light.svg";
 import logodark from "../images/logo-dark.svg";
 
 

@@ -168,9 +168,20 @@ display:inline-block;
 // ========================styles for hero page============================================
 // ========================================================================================
 
+.wrapper__image--content{
+    display:grid;
+    grid-template-columns:1fr;
+    
+    // grid-template-areas: " image"
+    //                        "text";
+    // height:100vh;
+}
+
 .image__hero--container{
     display:grid;
     overflow:hidden;
+    //  grid-area: image;
+     
 }
 .image__hero,
 .image__overlay--background {
@@ -190,10 +201,11 @@ display:inline-block;
        
     }
 
-.hero{
+
 
 
 .wrapper__title--text-button{
+    // grid-area:text;
     display:flex;
     gap:var(--spacing-200);
     flex-direction:column;
@@ -205,13 +217,15 @@ display:inline-block;
     .hero__title{
         font: var(--font-2);
         color:var(--clr-blue-950);
+       text-align:center;
     }
     .hero__text{
         font:var(--font-8);
        color:var(--clr-gray-600);
+       text-align:center;
     }
 
-}
+
 
 
 
