@@ -7,25 +7,33 @@
       
        align-items: center;
        
+     }
 
          .wrapper__title--text-button{
-          padding:0 var(--spacing-500) 0 var(--spacing-500);
+          padding: var(--spacing-500) var(--spacing-800);
+          gap:var(--spacing-400);
+          
      }
-    }
-
-     .image__hero--container {
-    .image__overlay--background {
-      transform: translateY(-180px);
-    }
-  }
-
+ 
 
 .features__info{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap:var(--spacing-200);
     margin-top:var(--spacing-400);
+   
+  
+  
+
+
+.features__item {
+   
+    align-items: flex-start;
+      text-align: left;
+    
 }
+}
+
 
   .articles__container {
   
@@ -41,6 +49,8 @@
 
 
   @media only screen and (min-width: 1024px) {
+
+
 .header__inner{
 
 
@@ -91,18 +101,19 @@
       display:grid;
       grid-template-areas: " text  image";
        grid-template-columns: repeat(2, 1fr);
-      // grid-template-columns: minmax(400px, 480px) 1fr;
        align-items: center;
-        //  min-height: 700px;
+      
 
 
       .image__hero--container{
         grid-area: image;
-        // transform: translateX(100px);
          justify-self: end;
         align-self: center;
          transform: translateX(40px);
-    // transform: translateX(380px)translateY(-140px);
+         overflow:visible;
+         max-height:60vh;
+
+    
   }
 
   .image__overlay--background {
@@ -118,31 +129,42 @@
       }
       .wrapper__title--text-button{
          grid-area: text;
-        // padding-top: 280px;
-        display:grid;
-        gap:var(--spacing-200);
-         justify-self: start;
-         min-width: 450px;
+        
+        display:flex;
+         flex-direction: column;
+         align-items: flex-start;
+        gap:var(--spacing-400);
+        //  justify-self: start;
+         min-width: 550px;
        
         
       
-       .btn-primary{
-        align-self: start;
-       }
+      
        .hero__title{
          text-align: left;
-          // align-self: start;
-          
-          //  max-inline-size: 16ch;
+         
        }
        .hero__text{
-        //  align-self: start;
+       
          text-align: left;
-        //  max-inline-size: 40ch;
-     
+       
   }
 }
+
+.features{
+    
+    .features__title{
+       
+        margin-top:0;
+        text-align: left;
+
+    } 
+     .features__text{
+        text-align: left;
+        max-inline-size: 500px;
+     }
   }
+}
 
 
 

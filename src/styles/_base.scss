@@ -1,9 +1,13 @@
 //=========================== NAVIGATION STYLES============================
 // =======================================================================+
+
+
 .container {
-//   width: 90%;
+
   max-width: 1200px;
   margin: 0 auto;
+  padding-inline: var(--spacing-400);
+
 }
 body {
   font-family: var(--ff-sans);
@@ -11,6 +15,7 @@ body {
   line-height: var(--lh-400);
   color: var(--clr-gray-900);
   background-color: var(--clr-gray-100);
+ 
 
 }
 
@@ -34,8 +39,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    // pointer-events: none; /* Prevent interaction when not active */
-    z-index: 998; /* Ensure it is below the header */
+    z-index: 998; 
 }
 .nav-logo{
  
@@ -48,19 +52,19 @@ body {
   right: 0;
   left: 0;
   z-index: 2000;
-  background-color:var(--clr-gray-100);
+  background-color:var(--clr-white);
   }
 
 .header__inner{
   display: flex;
    justify-content: space-between;
   align-items: center;
-  padding:var(--spacing-200) var(--spacing-400) var(--spacing-100) var(--spacing-200);
+  padding:var(--spacing-400);
  
    border-bottom:1px solid var(--clr-gray-300);
 }
 .menu-btn {
-    display:none; /* Show hamburger button on mobile */
+    display:none; 
     
   }
   .menu-btn{
@@ -86,7 +90,7 @@ body {
   width:100%;
   transition:right .3s ease;
   background-color:var(--clr-gray-100);
-  padding:var(--spacing-200);
+  padding:var(--spacing-400);
   display:flex;
   flex-direction:column;
   gap:var(--spacing-300);
@@ -168,29 +172,38 @@ display:inline-block;
 // ========================styles for hero page============================================
 // ========================================================================================
 
+
+.hero{
+        background-color:var(--clr-gray-50);
+}
 .wrapper__image--content{
     display:grid;
     grid-template-columns:1fr;
+
     
-    // grid-template-areas: " image"
-    //                        "text";
-    // height:100vh;
+    
 }
 
 .image__hero--container{
-    display:grid;
-    overflow:hidden;
-    //  grid-area: image;
+display:grid;
+overflow:hidden;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+max-height: 70vh;
+ 
      
 }
 .image__hero,
 .image__overlay--background {
   grid-area: 1 / 1;
   transform: translateX(140px);
+   width: 100%;
+  height: 100%;
 }
 .image__hero img {
   width: 100%;
   transform: translateX(-80px);
+  object-fit: cover;
 }
 
 
@@ -201,33 +214,26 @@ display:inline-block;
        
     }
 
-
-
-
 .wrapper__title--text-button{
-    // grid-area:text;
+  
     display:flex;
     gap:var(--spacing-200);
     flex-direction:column;
     align-items:center;
     padding:var(--spacing-200);
-    // margin-top:clamp(2.5rem, 8vw, 6rem);
+   
 }
 
     .hero__title{
-        font: var(--font-2);
+        font: var(--font-1);
         color:var(--clr-blue-950);
        text-align:center;
     }
     .hero__text{
-        font:var(--font-8);
+        font:var(--font-7__sansregular);
        color:var(--clr-gray-600);
        text-align:center;
     }
-
-
-
-
 
 
 
@@ -269,21 +275,23 @@ display:inline-block;
 // features section
 // ===================================================================
 
-
+.wrapperfeatures__title--text{
+    padding:var(--spacing-400);
+}
 .features{
-    background-color:var(--clr-gray-100);
+
     margin-bottom:var(--spacing-800);
-     padding:var(--spacing-200);
+     padding:var(--spacing-1000) var(--spacing-400) var(--spacing-800) var(--spacing-400);
 
     .features__title{
-        font: var(--font-3);
+        font: var(--font-2);
         text-align:center;
         color:var(--clr-blue-950);
-        margin-top:var(--spacing-800);
+        margin-top:var(--spacing-400);
 
     } 
     .features__text{
-        font: var(--font-8);
+        font: var(--font-7);
         text-align:center;
         color:var(--clr-gray-600);
         margin-top:var(--spacing-200);
@@ -326,9 +334,12 @@ display:inline-block;
 //                           ARTICLES SECTION 
 // ===================================================================
 
+.articles{
+ background-color:var(--clr-gray-50);
+}
 .articles__container{
 
-    background-color:var(--clr-gray-50);
+   
     margin-bottom:var(--spacing-800);
     padding:var(--spacing-200);
     .wrapper__image--description{

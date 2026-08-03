@@ -66,9 +66,11 @@
     letter-spacing: -1px
 ========================== */
 
---font-1: var(--fw-300) var(--fs-900) / 4.2rem var(--ff-sans);
+--font-1__sanslight: var(--fw-300) var(--fs-900) / 4.2rem var(--ff-sans);
 
 --ls-1: -0.0625rem;
+
+--font-1: var(--fw-400) var(--fs-900) / 4.2rem var(--ff-sans);
 
 /* =========================
     TEXT PRESENT 2
@@ -78,7 +80,7 @@
     letter-spacing: -0.75px
 ========================== */
 
---font-2: var(--fw-300) var(--fs-800) / 3rem var(--ff-sans);
+--font-2: var(--fw-400) var(--fs-800) / 3rem var(--ff-sans);
 
 --ls-2: -0.0469rem;
 
@@ -139,8 +141,8 @@
     letter-spacing: 0px
 ========================== */
 
---font-7: var(--fw-700) var(--fs-300) / 1.75rem var(--ff-sans);
-
+--font-7__sansbold: var(--fw-700) var(--fs-300) / 1.75rem var(--ff-sans);
+--font-7: var(--fw-400) var(--fs-300) / 1.75rem var(--ff-sans);
 --ls-7: 0;
 
 /* =========================

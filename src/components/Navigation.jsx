@@ -24,8 +24,8 @@ const [menuOpen, setMenuOpen] = useState(false);
 onClick={handleOverlayClick}>
 
 </div>
-    <header className="header container">
-      <div className="header__inner">
+    <header className="header ">
+      <div className="header__inner container">
 
         <Link to="/home" className="nav-logo-link">
           <img src={logodark} className="nav-logo" alt="Bank logo" />

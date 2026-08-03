@@ -8,7 +8,7 @@ import Articles from "../components/Articles";
 
  export default function Home() {
   return (
-   <section className="home container">
+   <section className="home ">
     <Hero />
     <Features />
     <Articles />
