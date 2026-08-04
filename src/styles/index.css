@@ -311,7 +311,6 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-inline: var(--spacing-400);
 }
 
 body {
@@ -320,12 +319,24 @@ body {
   line-height: var(--lh-400);
   color: var(--clr-gray-900);
   background-color: var(--clr-gray-100);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
 }
 
 .overlay.active {
   opacity: 1;
   visibility: visible;
-  pointer-events: auto; /* Allow interaction when active */
+  pointer-events: auto;
 }
 
 .overlay {
@@ -358,7 +369,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-400);
+  padding: var(--spacing-250);
   border-bottom: 1px solid var(--clr-gray-300);
 }
 
@@ -392,6 +403,7 @@ body {
   flex-direction: column;
   gap: var(--spacing-300);
   z-index: 1500;
+  align-items: center;
 }
 
 .nav__list .nav__items {
@@ -401,49 +413,49 @@ body {
 }
 
 .navigation.open {
-  right: 0; /* slide in */
+  right: 0;
 }
 
 .nav__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--spacing-300);
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.nav__list__item a {
+.nav__items__links {
   color: var(--clr-gray-900);
-  font: var(--font-7);
-  text-decoration: none;
-}
-
-.nav__list__item {
-  margin-left: 10px;
-  font-size: 1.1rem;
-}
-
-.navigation .nav__items__links {
   text-decoration: none;
   cursor: pointer;
   font: var(--font-7);
   position: relative;
   display: inline-block;
 }
-.navigation .nav__items__links::after {
+.nav__items__links::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px;
+  bottom: -1.5rem;
   width: 100%;
   height: 2px;
-  background-color: var(--orange-500);
+  background-image: var(--background-image-gradient-1);
   transform: scaleX(0);
   transform-origin: left;
+  inset-inline: 0;
+  inset-block-end: 0;
+  cursor: pointer;
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.navigation .nav__items__links:hover::after {
-  transform: scaleX(1);
+.nav__items__links:hover, .nav__items__links:focus-visible, .nav__items__links:active {
+  color: var(--clr-green-400);
+}
+.nav__items__links:hover::after, .nav__items__links:focus-visible::after, .nav__items__links.active::after {
   opacity: 1;
+  transform: scaleX(1);
 }
 
 .nav__list .nav__logo {
@@ -466,19 +478,19 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   max-height: 70vh;
+  justify-self: end;
 }
 
 .image__hero,
 .image__overlay--background {
   grid-area: 1/1;
-  transform: translateX(140px);
   width: 100%;
   height: 100%;
 }
 
 .image__hero img {
   width: 100%;
-  transform: translateX(-80px);
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -486,7 +498,6 @@ body {
 .image__overlay--background {
   justify-self: center;
   align-self: start;
-  transform: translateY(-80px);
 }
 
 .wrapper__title--text-button {
@@ -494,11 +505,11 @@ body {
   gap: var(--spacing-200);
   flex-direction: column;
   align-items: center;
-  padding: var(--spacing-200);
+  padding: var(--spacing-400);
 }
 
 .hero__title {
-  font: var(--font-1);
+  font: var(--font-2);
   color: var(--clr-blue-950);
   text-align: center;
 }
@@ -665,6 +676,7 @@ body {
   flex-direction: column;
   gap: var(--spacing-400);
   align-items: center;
+  min-width: 100%;
   justify-content: center;
 }
 
@@ -730,6 +742,12 @@ body {
   text-align: center;
 }
 
+@media only screen and (min-width: 568px) {
+  .image__overlay--background {
+    width: 85%;
+    justify-self: center;
+  }
+}
 @media only screen and (min-width: 768px) {
   .wrapper__image--content {
     align-items: center;
@@ -751,6 +769,10 @@ body {
   .articles__container .wrapper__image--description {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .image__overlay--background {
+    max-width: 600px;
+    justify-self: center;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -796,15 +818,12 @@ body {
     grid-area: image;
     justify-self: end;
     align-self: center;
-    transform: translateX(40px);
     overflow: visible;
     max-height: 60vh;
   }
   .wrapper__image--content .image__overlay--background {
-    transform: translateY(-80px);
-  }
-  .wrapper__image--content .image__hero img {
-    transform: translateX(0);
+    width: 110%;
+    justify-self: center;
   }
   .wrapper__title--text-button {
     grid-area: text;
