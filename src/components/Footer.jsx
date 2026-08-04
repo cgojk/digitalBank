@@ -12,6 +12,7 @@ export default function Footer() {
   return (
 <>
     <section className="footer container">
+      <div className="wrapper__logo--links">
         <div className="wrapper__socialmedia__logo">
             <img src={logolight} className="nav-logo" alt="Bank logo" />
         </div>
@@ -33,55 +34,58 @@ export default function Footer() {
                </div>
 
         </div>
+      </div>
       <div className="footer__inner">
-
+        <div className="first__items">
           <ul className="footer__list">
-
-            <li className="footer__items">
-              <NavLink to="/home" className="footer__items__links">
-                Home
-              </NavLink>
-            </li>
-
-            <li className="footer__items">
-              <NavLink to="/about" className="footer__items__links">
-                About Us
-              </NavLink>
-            </li>
-
-            <li className="footer__items">
-              <NavLink to="/recipes" className="footer__items__links">
-              Contact
-              </NavLink>
-            </li>
-
-            <li className="footer__items">
-              <NavLink to="/recipes" className="footer__items__links">
-             Blog
-              </NavLink>
-            </li>
-
             
-            <li className="footer__items">
-              <NavLink to="/recipes" className="footer__items__links">
-          careers
-              </NavLink>
-            </li>
+              <li className="footer__items">
+                <NavLink to="/home" className="footer__items__links">
+                  Home
+                </NavLink>
+              </li>
 
-            <li className="footer__items">
-              <NavLink to="/recipes" className="footer__items__links">
-         Support
-              </NavLink>
-            </li>
-            <li className="footer__items">
-              <NavLink to="/recipes" className="footer__items__links">
-          Privacy Policy
-              </NavLink>
-            </li>
+              <li className="footer__items">
+                <NavLink to="/about" className="footer__items__links">
+                  About Us
+                </NavLink>
+              </li>
 
-     
-        </ul>
+              <li className="footer__items">
+                <NavLink to="/recipes" className="footer__items__links">
+                Contact
+                </NavLink>
+              </li>
 
+              <li className="footer__items">
+                <NavLink to="/recipes" className="footer__items__links">
+              Blog
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+          <div className="second__items">
+            <ul className="footer__list">
+
+              
+              <li className="footer__items">
+                <NavLink to="/recipes" className="footer__items__links">
+            careers
+                </NavLink>
+              </li>
+
+              <li className="footer__items">
+                <NavLink to="/recipes" className="footer__items__links">
+          Support
+                </NavLink>
+              </li>
+              <li className="footer__items">
+                <NavLink to="/recipes" className="footer__items__links">
+            Privacy Policy
+                </NavLink>
+              </li>
+          </ul>
+        </div>
       </div>
       <div className="wrapper__button--copyright">
        <Link to="/home" className="footer__button-link">
